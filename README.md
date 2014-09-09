@@ -15,8 +15,18 @@ For example, assume that you are going to add a new search folder which searches
     The part `extensions.typical-reply@clear-code.com.folders.` is the common prefix.
  3. Define subject prefix or subject to be matched.
     
-        pref("extensions.typical-reply@clear-code.com.folders.important.subjectPrefix", "[Important]");
-        pref("extensions.typical-reply@clear-code.com.folders.important.subject",       "");
+        pref("extensions.typical-reply@clear-code.com.folders.important.conditions",
+          "OR (subject,begins with,[Important]) OR (subject,begins with,Important)");
+    
+    or
+    
+        pref("extensions.typical-reply@clear-code.com.folders.important.subjectPrefix",
+          "[Important]");
+    
+    or
+    
+        pref("extensions.typical-reply@clear-code.com.folders.important.subject",
+          "[Important]");
     
  4. Define search targets of the virtual folder.
     
@@ -31,8 +41,8 @@ For example, assume that you are going to add a new search folder which searches
 Finally you'll get a configurations for the new button, like following:
 
 ~~~
-pref("extensions.typical-reply@clear-code.com.folders.important.label",         "Awesome!");
-pref("extensions.typical-reply@clear-code.com.folders.important.subjectPrefix", "[[!Awesome]]");
-pref("extensions.typical-reply@clear-code.com.folders.important.subject",       "");
+pref("extensions.typical-reply@clear-code.com.folders.important.label",         "Important");
+pref("extensions.typical-reply@clear-code.com.folders.important.conditions",
+  "OR (subject,begins with,[Important]) OR (subject,begins with,Important)");
 pref("extensions.typical-reply@clear-code.com.folders.important.searchTargets", "all");
 ~~~

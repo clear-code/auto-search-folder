@@ -4,6 +4,7 @@
 
 /*
 pref("extensions.auto-search-folder@clear-code.com.folders.test.label",         "test search folder");
+pref("extensions.auto-search-folder@clear-code.com.folders.test.conditions",    "OR (subject,begins with,TEST?) OR (subject,begins with,TEST!)");
 pref("extensions.auto-search-folder@clear-code.com.folders.test.subjectPrefix", "[test]");
 pref("extensions.auto-search-folder@clear-code.com.folders.test.subject",       "[test] ...");
 pref("extensions.auto-search-folder@clear-code.com.folders.test.searchTargets", "all");

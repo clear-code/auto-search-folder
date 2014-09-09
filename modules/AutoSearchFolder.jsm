@@ -39,6 +39,7 @@ var AutoSearchFolder = {
     var base = this.BASE + 'folders.' + aType + '.';
     return {
       label:         this.prefs.getLocalizedPref(base + 'label'),
+      conditions:    this.prefs.getLocalizedPref(base + 'conditions'),
       subjectPrefix: this.prefs.getLocalizedPref(base + 'subjectPrefix'),
       subject:       this.prefs.getLocalizedPref(base + 'subject'),
       searchTargets: this.prefs.getLocalizedPref(base + 'searchTargets')
