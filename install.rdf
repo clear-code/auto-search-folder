@@ -3,10 +3,10 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="typical-reply@clear-code.com"
-                   em:name="Typical Reply"
-                   em:version="0.2"
-                   em:description="Provides ability to send/receive typical replies in a team."
+                   em:id="auto-search-folder@clear-code.com"
+                   em:name="Auto Search Folder"
+                   em:version="0.1"
+                   em:description="Provides ability to create serch folders automatically."
                    em:creator="ClearCode Inc."
                    em:unpack="true"
                    em:homepageURL="http://www.clear-code.com/">
@@ -16,8 +16,8 @@
 
     <em:localized>
       <RDF:Description em:locale="en-US"
-                       em:name="Typical Reply"
-                       em:description="Provides ability to send/receive typical replies in a team."
+                       em:name="Auto Search Folder"
+                       em:description="Provides ability to create serch folders automatically."
                        em:creator="ClearCode Inc."
                        em:homepageURL="http://www.clear-code.com/">
       </RDF:Description>
@@ -25,8 +25,8 @@
 
     <em:localized>
       <RDF:Description em:locale="ja"
-                       em:name="Typical Reply"
-                       em:description="チーム内で定型的なメッセージの送受信を行えるようにします。"
+                       em:name="Auto Search Folder"
+                       em:description="自動的に検索フォルダを作成します。"
                        em:creator="ClearCode Inc."
                        em:homepageURL="http://www.clear-code.com/">
       </RDF:Description>
