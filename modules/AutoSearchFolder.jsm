@@ -31,7 +31,7 @@ var AutoSearchFolder = {
         return
       var type = aName.replace(labelPattern, '');
       this.definitions.push(this.getDefinition(type));
-    });
+    }, this);
     return this.definitions;
   },
 
